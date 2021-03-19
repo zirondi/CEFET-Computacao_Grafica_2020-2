@@ -7,4 +7,4 @@
 
 ### Info
 
-O código em p5.js está no arquivo [Trab_01-Poligono_Esrelado.js](Trab_01-Poligono_Esrelado.js).
+O código em p5.js está no arquivo [Trab_01-Poligono_Estrelado.js](Trab_01-Poligono_Estrelado.js).
