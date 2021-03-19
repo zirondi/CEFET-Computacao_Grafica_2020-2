@@ -2,7 +2,7 @@
 
 ### Como rodar
 
-1. Abrir o arquivo index.html
+1. Abrir o arquivo [index.html](index.html).
 
 
 ### Info
