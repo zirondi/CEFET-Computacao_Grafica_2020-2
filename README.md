@@ -16,7 +16,7 @@ Este código foi feito usando o [p5.js](https://p5js.org/).
 
 **Bônus**: To do.
 
-## Trabalho 3
+## [Trabalho 3 - Prisma](https://github.com/zirondi/CEFET-Computacao_Grafica_2020-2/tree/main/Trab_03-Prisma)
 
 Desenhar um prisma.
 
