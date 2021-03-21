@@ -18,12 +18,14 @@ Este código foi feito usando o [p5.js](https://p5js.org/).
 
 ## Trabalho 3
 
-Desenhar um prisma a partir de ?
+Desenhar um prisma.
+
+**Bônus**: Número de faces variável e controle da orientação da figura. 
 
 Este código foi feito usando o [PyOpenGL](https://pypi.org/project/PyOpenGL/)
 
 ## Trabalho 4
 
-Desenhar um tronco de uma pirâmide de base pentagonal.
+Desenhar um tronco de uma pirâmide.
 
 Este código foi feito usando o [PyOpenGL](https://pypi.org/project/PyOpenGL/)
