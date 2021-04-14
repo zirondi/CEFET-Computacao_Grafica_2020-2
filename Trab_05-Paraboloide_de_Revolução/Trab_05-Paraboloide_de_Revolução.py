@@ -56,7 +56,7 @@ def figure():
     GL.glRotatef(beta, 0.0, 0.0, 1.0)
 
     # Figure
-    for i in range(m):
+    for i in range(round(m/2)):
         GL.glBegin(GL.GL_QUAD_STRIP)
         for j in range(n):
             GL.glColor3fv(
