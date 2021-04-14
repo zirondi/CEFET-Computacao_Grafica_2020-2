@@ -1,5 +1,7 @@
 # CEFET/RJ - Computacao Gráfica 2020-2
 
+# OLD 
+
 ## [Trabalho 1 - Polígono Estrelado](Trab_01-Poligono_Estrelado/)
 
 Desenhar um polígono estrelado a partir de dois círculos, com o tamanho das pontas da estrela acompanhando o movimento do mouse no eixo Y.
