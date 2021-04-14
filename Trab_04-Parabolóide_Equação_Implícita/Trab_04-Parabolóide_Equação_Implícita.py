@@ -5,7 +5,7 @@ from sys import argv
 from math import sin, cos, pi
 
 # Window Name
-window_name = "Template"
+window_name = "Paraboloide de Equacao Implicita"
 
 # Rotation vars
 left_button = False
@@ -25,6 +25,19 @@ down_x, down_y = 0, 0
 background_color = (0.184, 0.211, 0.250, 1)
 
 
+# Figure Vars
+
+m, n = 100, 100
+x0, y0 = -2, -2
+xf, yf = 2, 2
+dx, dy = (xf - x0)/m, (yf - y0)/n
+
+# Figure functions
+
+def f(x,y):
+    return x**2-y**2
+
+
 def figure():
     GL.glPushMatrix()
 
@@ -38,50 +51,16 @@ def figure():
     GL.glRotatef(beta, 0.0, 0.0, 1.0)
 
     # Figure
-    GL.glBegin(GL.GL_QUADS)
-
-    # Front Face
-    GL.glColor3f(1, 1, 1)
-    GL.glVertex3f(-1.0, -1.0, 1.0)
-    GL.glVertex3f(1.0, -1.0, 1.0)
-    GL.glVertex3f(1.0, 1.0, 1.0)
-    GL.glVertex3f(-1.0, 1.0, 1.0)
-
-    # Back Face
-    GL.glColor3f(1, 1, 0)
-    GL.glVertex3f(-1.0, -1.0, -1.0)
-    GL.glVertex3f(-1.0, 1.0, -1.0)
-    GL.glVertex3f(1.0, 1.0, -1.0)
-    GL.glVertex3f(1.0, -1.0, -1.0)
-
-    # Top Face
-    GL.glColor3f(1, 0, 1)
-    GL.glVertex3f(-1.0, 1.0, -1.0)
-    GL.glVertex3f(-1.0, 1.0, 1.0)
-    GL.glVertex3f(1.0, 1.0, 1.0)
-    GL.glVertex3f(1.0, 1.0, -1.0)
-
-    # Bottom Face
-    GL.glColor3f(1, 0, 0)
-    GL.glVertex3f(-1.0, -1.0, -1.0)
-    GL.glVertex3f(1.0, -1.0, -1.0)
-    GL.glVertex3f(1.0, -1.0, 1.0)
-    GL.glVertex3f(-1.0, -1.0, 1.0)
-
-    # Right face
-    GL.glColor3f(0, 1, 0)
-    GL.glVertex3f(1.0, -1.0, -1.0)
-    GL.glVertex3f(1.0, 1.0, -1.0)
-    GL.glVertex3f(1.0, 1.0, 1.0)
-    GL.glVertex3f(1.0, -1.0, 1.0)
-
-    # Left Face
-    GL.glColor3f(0, 1, 1)
-    GL.glVertex3f(-1.0, -1.0, -1.0)
-    GL.glVertex3f(-1.0, -1.0, 1.0)
-    GL.glVertex3f(-1.0, 1.0, 1.0)
-    GL.glVertex3f(-1.0, 1.0, -1.0)
-    GL.glEnd()
+    for i in range(0, n):
+        y = y0 + i*dy      
+        GL.glColor3f(1-(i/n), 0, i/n)
+        GL.glBegin(GL.GL_QUAD_STRIP)
+        for j in range(0,m):
+            x = x0 + j*dx
+            GL.glVertex3f(x, y, f(x,y))
+            GL.glVertex3f(x, y+dy, f(x, y+dy))
+            
+        GL.glEnd()
 
     GL.glPopMatrix()
 
