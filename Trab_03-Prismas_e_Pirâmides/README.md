@@ -1,4 +1,4 @@
-## Trabalho 03 - Prisma
+## Trabalho 03 - Prismas e Pirâmides
 
 ### Como rodar
 
