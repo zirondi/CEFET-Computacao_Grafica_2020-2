@@ -1,8 +1,8 @@
-## Trabalho 07 - Esfera Texturizada
+## Trabalho 08 - Esfera Texturizada
 
 ### Como rodar
 
-1. Rodar o arquivo [Trab_07-Esfera_Texturizada.py](Trab_07-Esfera_Texturizada.py) (Python3).
+1. Rodar o arquivo [Trab_08-Esfera_Texturizada.py](Trab_08-Esfera_Texturizada.py) (Python3).
 
 
 ### Info

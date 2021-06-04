@@ -1,8 +1,8 @@
-## Trabalho 08 - Iluminação dos Sólidos
+## Trabalho 09 - Iluminação dos Sólidos
 
 ### Como rodar
 
-1. Rodar o arquivo [Trab_08-Iluminação_dos_Sólidos.py](Trab_08-Iluminação_dos_Sólidos.py) (Python3).
+1. Rodar o arquivo [Trab_09-Iluminação_dos_Sólidos.py](Trab_09-Iluminação_dos_Sólidos.py) (Python3).
 
 
 ### Info
