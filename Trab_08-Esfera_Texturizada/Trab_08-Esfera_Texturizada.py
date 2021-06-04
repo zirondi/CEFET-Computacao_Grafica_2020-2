@@ -64,7 +64,7 @@ def load_textures():
     global texture
     texture = GL.glGenTextures(2)
 
-    png_img = Reader(filename='D:\\0\\GitHub\\CEFET-Computacao_Grafica_2020-2\\Trab_07-Esfera_Texturizada\\mapa.png')
+    png_img = Reader(filename='D:\\0\\GitHub\\CEFET-Computacao_Grafica_2020-2\\Trab_08-Esfera_Texturizada\\mapa.png')
 
     w, h, pixels, metadata = png_img.read_flat()
 
