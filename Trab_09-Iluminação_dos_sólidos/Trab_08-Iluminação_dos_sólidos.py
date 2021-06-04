@@ -344,8 +344,8 @@ def special_key_pressed(key, x, y):
 
 
 def key_pressed(key, x, y):
-    global piramid_modifier, mat_ambient, mat_diffuse, mat_specular
-
+    global piramid_modifier
+    
     if key == b"\033":
         GLUT.glutLeaveMainLoop()
 
