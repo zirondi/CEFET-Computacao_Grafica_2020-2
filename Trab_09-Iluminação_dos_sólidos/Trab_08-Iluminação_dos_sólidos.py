@@ -20,6 +20,7 @@ Y = 1
 Z = 2
 
 # Illumination
+count = 0
 materials = [
     #Brass
     [
@@ -427,7 +428,8 @@ def main():
     GL.glMaterialfv(GL.GL_FRONT, GL.GL_DIFFUSE, materials[0][1])
     GL.glMaterialfv(GL.GL_FRONT, GL.GL_SPECULAR, materials[0][2])
     GL.glMaterialfv(GL.GL_FRONT, GL.GL_SHININESS, materials[0][3])
-
+    
+    light_position = (10, 0, 0)
     GL.glEnable(GL.GL_LIGHTING)
     GL.glEnable(GL.GL_LIGHT0)
     GL.glLightfv(GL.GL_LIGHT0, GL.GL_POSITION, light_position)
